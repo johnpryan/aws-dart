@@ -154,30 +154,30 @@ class ListObjectRequest extends ListObjectRequestBase {
 
 @JS()
 class ListObjectResponseBase {
-  bool IsTruncated;
-  List<ListObjectContent> Contents;
-  String Name;
-  String Prefix;
-  String Delimiter;
-  int MaxKeys;
-  List<dynamic> CommonPrefixes;
-  dynamic EncodingType;
+  external bool get IsTruncated;
+  external List<ListObjectContent> get Contents;
+  external String get Name;
+  external String get Prefix;
+  external String get Delimiter;
+  external int get MaxKeys;
+  external List<dynamic> get CommonPrefixes;
+  external dynamic get EncodingType;
 }
 
 @JS()
 class ListObjectV2Response extends ListObjectResponseBase {
-  num KeyCount;
-  String ContinuationToken;
-  String NextContinuationToken;
-  String StartAfter;
+  external num get KeyCount;
+  external String get ContinuationToken;
+  external String get NextContinuationToken;
+  external String get StartAfter;
 }
 
 @JS()
 class ListObjectContent {
-  String Key;
-  String LastModified;
-  String ETag;
-  num Size;
-  dynamic StorageClass;
-  dynamic Owner;
+  external String get Key;
+  external String get LastModified;
+  external String get ETag;
+  external num get Size;
+  external dynamic get StorageClass;
+  external dynamic get Owner;
 }
